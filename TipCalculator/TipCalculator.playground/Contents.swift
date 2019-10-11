@@ -1,9 +1,16 @@
 import UIKit
 
-let amountOfBill = 120.34
-let tipPercentageString = "15"
-let tipPercentageAsDouble = Double(tipPercentageString)
-let tipPercentage = 0.15
-let tip = amountOfBill * tipPercentage
+// Text fields
+let billAmount = UITextField()
+let tipPercentage = UITextField()
+let splitBetweenHowManyPeople = UITextField()
+
+// Simulate userinput
+billAmount.text = "100"
+tipPercentage.text = "15"
+splitBetweenHowManyPeople.text = "2"
+
+// Get actual strungs from each text field
 
 
+//
