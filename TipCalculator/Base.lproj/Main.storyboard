@@ -68,6 +68,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.0" green="0.042618565944777607" blue="0.54462840025906734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0X-hc-kUz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total tip is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC1-nT-c90">
                                 <rect key="frame" x="64" y="518" width="110" height="29"/>
@@ -80,13 +83,6 @@
                                 <rect key="frame" x="43" y="567" width="143" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t89-hz-pgg">
-                                <rect key="frame" x="194" y="518" width="74" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -104,13 +100,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t89-hz-pgg">
+                                <rect key="frame" x="194" y="522" width="74" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.71937545619999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="billAmount" destination="uE2-lx-hWf" id="faQ-c5-qlG"/>
-                        <outlet property="billmount" destination="uE2-lx-hWf" id="rfg-af-5ib"/>
+                        <outlet property="calculatedTip" destination="t89-hz-pgg" id="iVk-3z-UAc"/>
+                        <outlet property="calculatedTipPerPerson" destination="e0K-Pt-ePa" id="5ng-mW-5xB"/>
+                        <outlet property="submittedBillAmount" destination="uE2-lx-hWf" id="Y51-Mt-UHt"/>
                         <outlet property="submittedPeopleCount" destination="bMk-7G-M1G" id="n9W-YU-ehD"/>
                         <outlet property="submittedTip" destination="Y6K-xS-jSr" id="7i5-d9-bUF"/>
                     </connections>
